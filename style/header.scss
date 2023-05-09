@@ -1,0 +1,112 @@
+header {
+  background-color: $blacke_color;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__el {
+    width: 50%;
+  }
+
+  &__logo {
+    width: 30%;
+  }
+
+  &__logo-img {
+    margin-left: 20px;
+  }
+
+  &__nav {
+    width: 70%;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  &__linc {
+    padding: 32px 25px;
+    background-color: $blacke_color;
+    color: $white_color;
+    font-size: $smoll;
+    font-weight: $standart;
+
+    &:hover {
+      background-color: $interectiv_color;
+    }
+
+    &:active {
+      background-color: $interectiv_color2;
+    }
+  }
+
+  &__menu {
+    display: none;
+  }
+}
+
+.navbar {
+  display: none;
+
+  .container-fluid {
+    justify-content: end;
+  }
+
+  a {
+    color: $white_color;
+    margin: 0;
+
+    &:hover {
+      background-color: $interectiv_color;
+      color: $white_color;
+    }
+
+    &:active {
+      background-color: $interectiv_color2;
+      color: $white_color;
+    }
+  }
+}
+
+
+@media (max-width: 1500px) {}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 992px) {
+  .header {
+    align-items: stretch;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .header__logo {
+    width: 0%;
+  }
+
+  .navbar {
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .navbar-nav {
+    font-family: Open Sans;
+    font-size: $smoll;
+    font-weight: $standart;
+    text-align: center;
+    margin-top: 10px;
+    --bs-nav-link-hover-color: rgb(255 255 255);
+  }
+
+  .nav_link {
+    font-family: Open Sans;
+  }
+}
+
+@media (max-width: 767px) {}

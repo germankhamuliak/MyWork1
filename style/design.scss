@@ -1,0 +1,45 @@
+.design {
+    background: url(../img/design/bg.png ) no-repeat center;
+    background-size: cover;
+    padding: 10px 0 40px;
+    text-align: center;
+    .section-header{
+        color: $white_color;
+    }
+  
+    .section-name h1 {
+        &::after{
+            background-color: $white_color;
+        }
+    }
+    .section-text{
+        color: $white_color;
+
+  }
+  
+    &__btn  {
+    margin-top: 45px;
+    width: 40%;
+    max-width: 370px;
+    height: 58px;
+  }
+
+  }
+  
+  @media (max-width: 1500px) {}
+
+  @media (max-width: 1200px) {}
+  
+  @media (max-width: 992px) {}
+  
+  @media (max-width: 767px) {
+    .design {
+   
+    &__btn  {
+    margin-top: 45px;
+    width: 100%;
+    max-width: 320px;
+    height: 50px;
+  }
+
+  }}

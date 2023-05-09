@@ -1,0 +1,132 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    color: $blacke_color;
+    min-width: 300px;
+}
+
+.mycontainer {
+    width: 100%;
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.btn-normal-1 {
+    border: 2px solid $white_color;
+    font-family: Open Sans;
+    font-size: $middle;
+    font-weight: $standart;
+    text-align: center;
+    background-color: transparent;
+    color: $white_color;
+    cursor: pointer;
+
+    &:hover {
+        color: $interectiv_color;
+        border: 2px solid $interectiv_color;
+    }
+
+    &:active {
+        background-color: $interectiv_color2;
+        border: $interectiv_color2;
+        color: $white_color;
+    }
+}
+
+.btn-normal-2 {
+    font-family: Open Sans;
+    background-color: $interectiv_color;
+    color: $white_color;
+    border: 1px solid $interectiv_color;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $interectiv_color2;
+        border: 1px solid $interectiv_color2;
+    }
+
+    &:active {
+        background-color: $interectiv_color;
+        box-shadow: 0px 0px 10px 0px #AB4949 inset;
+        border: 1px solid $interectiv_color;
+    }
+}
+
+.section-header {
+    margin-top: 90px;
+    
+}
+.section-name h1 {
+    font-family: Raleway;
+    font-size: $extra-large;
+    font-weight: $thin;
+    line-height: 42px;
+    text-align: center;
+    text-transform: uppercase;
+
+    &::after{
+        content: "";
+        display: block;
+        margin: 50px auto 0;
+        width: 170px;
+        height: 1px;
+        background-color: $interectiv_color;
+    }
+
+}
+.section-text {
+    font-family: Raleway;
+    font-size: $middle;
+    font-weight: $thin;
+    line-height: 21px;
+    color: $SomeText_color;
+    text-align: center;
+    margin-top: 40px;
+}
+
+@media (max-width: 1500px) {}
+
+@media (max-width: 1200px) {
+    .section-header {
+        margin-top: 60px;
+        
+    }
+    .section-name h1 {
+        font-size: $md-large; 
+        &::after{
+            margin: 30px auto 0;
+        }
+    
+    }
+    .section-text {
+        font-size: $smoll;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 767px) {
+    .section-header {
+        margin-top: 50px;
+        
+    }
+    .section-name h1 {
+        font-size: $middle; 
+    }
+    .section-text {
+        font-size: $extra-smoll;
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,132 @@
+.options {
+    background-color: $options_color;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    &__content {
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__card {
+        width: 32%;
+        max-width: 370px;
+        text-align: center;
+        cursor: pointer;
+        &:hover{
+            transform: translate(0,-20px);
+            box-shadow: 0px 4px 10px 0px $options_shadow;
+        }
+    }
+    &__head {
+        background-color: $options_color2;
+        color: $white_color;
+        p{
+            border: 2px solid $options_color;
+            border-top: none;
+            margin-bottom: 0;
+        }
+    }
+    &__title {
+        font-family: Open Sans;
+        font-size: $md-large;
+        font-weight: $bold;
+        line-height: 33px;
+        padding: 13px 0;
+
+    }
+    &__price {
+        font-family: Raleway;
+        font-size: $extra-large;
+        font-weight: $bold;
+        line-height: 42px;
+        padding: 28px 0;
+    }
+    &__sub-title {
+        font-family: Raleway;
+        font-size: $middle;
+        font-weight: $thin;
+        line-height: 21px;
+        color: $options_color3;
+        padding: 8px 0;
+    }
+    &__body {
+        background-color: $white_color;
+    }
+    &__size {
+        font-size: $middle;
+        font-weight: $thin;
+        border: 2px solid $options_color;
+        border-top: none;
+        margin-bottom: 0;
+        color: $SomeText_color;
+        padding: 13px 0;
+
+    }
+}
+
+@media (max-width: 1500px) {
+
+}  
+
+@media (max-width: 1200px) 
+{
+    .options {
+        padding-bottom: 40px;
+        &__content {
+            margin-top: 50px;
+        }
+        &__title {
+            padding: 13px 0;
+    
+        }
+        &__price {
+            padding: 23px 0;
+        }
+        &__sub-title {
+            padding: 5px 0;
+        }
+        &__size {
+            padding: 5px 0;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 767px) {
+    .options {
+        padding-bottom: 25px;
+        &__content {
+            margin-top: 40px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__card {
+            width: 100%;
+            margin-bottom: 30px;
+            &:hover{
+            transform: translate(0,0);
+        }
+    
+        }
+        &__title {
+            font-size: $middle;
+            padding: 10px 0;
+    
+        }
+        &__price {
+            font-size: $large;
+            padding: 20px 0;
+        }
+        &__sub-title {
+            font-size: $smoll;
+            padding: 3px 0;
+        }
+        &__size {
+            padding: 3px 0;
+            font-size: $smoll;
+        }
+    }
+ 
+}
